@@ -1,0 +1,29 @@
+#!/bin/sh
+python3 ../pinnlfrg/pinnlfrg.py \
+    --lend             5 \
+    --p1               1 \
+    --std_col_mul      1 \
+    --std_col_mul_pre  1 \
+    --Nphi             1 \
+    --m2               1e-2 \
+    --g4               1e-4 \
+    --Nlayer           4 \
+    --Nnode            256 \
+    --Ncol             500 \
+    --Ncol_pre         500 \
+    --use_xavier       1 \
+    --std              1e0 \
+    --rseed            57 \
+    --Niter            1000 \
+    --Niter_pre        10000 \
+    --Nprint           100 \
+    --Nplot            100 \
+    --Nsave            100 \
+    --lr               1e-3 \
+    --lr_decay         1 \
+    --lr_pre           1e-3 \
+    --cptpath_load     './out.cpt' \
+    --cptpath_save     './out.cpt' \
+    --cptpath_pre      './out.cpt' \
+    --out_tensorboard  1 \
+    --load_cpt         0 
