@@ -5,7 +5,7 @@ Pytorch implementation of PINN-LFRG solver for the zero-dimensional O(N) model: 
 The renormalization-group-induced effective action of the effective action of 0D O(N) model is represented by an NN. The physics-informed neural network (PINN) is used to derive the solution of the Wetterich equation.
 
 ## Usage
-To start the training, execute the python script:
+To start the training, execute the Python script:
 ```
 python3 pinnlfrg/pinnlfrg.py
 ```
@@ -31,7 +31,9 @@ Alternatively, you can do the same without the shell script.
 2. Move to `_testrun`
 3. Run the following:
    ```
-   python3 ../pinnlfrg/pinnlfrg.py --Nphi 1 --m2 1e-2 --g4 1e-4 --Nlayer 4 --Nnode 256 --Ncol 500 --Ncol_pre 500 --rseed 57 --Niter 1000 --Niter_pre 10000 --Nprint 100 --Nplot 100 --Nsave 100 --lr 1e-3 --lr_pre 1e-3 --out_tensorboard  1
+   python3 ../pinnlfrg/pinnlfrg.py --Nphi 1 --m2 1e-2 --g4 1e-4 --Nlayer 4 --Nnode 256
+   --Ncol 500 --Ncol_pre 500 --rseed 57 --Niter 1000 --Niter_pre 10000
+   --Nprint 100 --Nplot 100 --Nsave 100 --lr 1e-3 --lr_pre 1e-3 --out_tensorboard 1
    ```
 4. For visualizing the results, run `python3 polt_all.py`
 
