@@ -2,18 +2,18 @@
 
 Pytorch implementation of PINN-LFRG solver for the zero-dimensional O(N) model: [arXiv:2312.16038](https://doi.org/10.48550/arXiv.2312.16038).
 
-The renormalizagion-group-induced effective action of the effective action of 0D O(N) model is repredented by an NN. Physics-informed neural network (PINN) is used for deriving the solution of the Wetterich equation.
+The renormalization-group-induced effective action of the effective action of 0D O(N) model is represented by an NN. The physics-informed neural network (PINN) is used to derive the solution of the Wetterich equation.
 
 ## Usage
-To start the training, excute the python script:
+To start the training, execute the python script:
 ```
 python3 pinnlfrg/pinnlfrg.py
 ```
-Parameters in the calculation are given as optional aarguments. See the help option.
+Parameters in the calculation are given as optional arguments. Please take a look at the help option.
 ```
 python3 pinnlfrg/pinnlfrg.py -h
 ```
-In the dafault setting, this code generates the checkpoint file `out.cpt`, which contains the resultant learning parameters, and log files for `tensorboard`.
+In the default setting, this code generates the checkpoint file `out.cpt`, which contains the resultant learning parameters and log files for `tensorboard`.
 
 The script `run/plot_all.py` visualizes the results of the effective action and the self-energy from the checkpoint file `out.cpt`.
 
@@ -22,11 +22,11 @@ We provide some additional codes to make it easy for you to get started
 1. Run `testrun.sh` 
 2. Move to `_testrun`
 3. Run `run.sh`
-   1. The traiing is executed. This may take a few minutes.
-   2. You can see the progress of the training using `tensorboard`.
+   1. The training is executed. This may take a few minutes.
+   2. You can see the training progress using `tensorboard`.
 4. For visualizing the results, run `python3 polt_all.py`
 
-You can do the same without the shell script.
+Alternatively, you can do the same without the shell script.
 1. Make a directory named `_testrun` and copy the contents in `run` into `_testrun`
 2. Move to `_testrun`
 3. Run the following:
@@ -36,7 +36,7 @@ You can do the same without the shell script.
 4. For visualizing the results, run `python3 polt_all.py`
 
 ## GPU environment
-Mult-GPU environment is not supproted.
+Multi-GPU environments are not supported.
 
 ## How to cite
 Please cite our paper ([arXiv:2312.16038](https://doi.org/10.48550/arXiv.2312.16038)) if you use this code.
