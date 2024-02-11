@@ -13,7 +13,7 @@ Parameters in the calculation are given as optional arguments. Please take a loo
 ```
 python3 pinnlfrg/pinnlfrg.py -h
 ```
-In the default setting, this code generates the checkpoint file `out.cpt`, which contains the resultant learning parameters and log files for `tensorboard`.
+In the default setting, the code generates the checkpoint file `out.cpt`, which contains the resultant learning parameters, and log files for `tensorboard`.
 
 The script `run/plot_all.py` visualizes the results of the effective action and the self-energy from the checkpoint file `out.cpt`.
 
